@@ -1,8 +1,27 @@
-# Customer-Shopping-Behaviour
-Customer Shopping Behavior Analysis
+# Customer-Shopping-Behaviour-Analysis
+
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/0c82bdf9-09e8-41f2-9997-bbba1c4d4de5" />
+
 
 Overview
-End-to-end analysis converting raw Excel customer data into actionable insights and an interactive Power BI dashboard. Built with Excel → Python (Jupyter) → SQL → Power BI.
+
+This project is an end-to-end analysis of customer shopping behaviour, starting from raw Excel data and transforming it into actionable business insights and an interactive Power BI dashboard.
+
+The goal was not just to analyse the data, but to understand who the most valuable customers are and how businesses can use this information to improve revenue and customer retention.
+
+Pipeline: Excel → Python (Jupyter) → SQL Server → Power BI
+
+Business Problem
+
+Retail businesses often collect large amounts of customer data but struggle to turn it into meaningful decisions.
+
+This project focuses on:
+
+Identifying high-value customers
+
+Understanding purchasing patterns
+
+Finding opportunities to improve revenue and engagement
 
 Tools
 
@@ -14,41 +33,57 @@ Microsoft SQL Server (data warehouse)
 
 Power BI (interactive dashboards)
 
-Quick setup (step-by-step)
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/59265677-2543-4604-9fab-ff73fc00afb3" />
 
-Data — Place Customer_Shopping_Behaviour.xlsx in the data/ folder.
+Project Workflow
 
-Preprocess — Open notebooks/customerBehaviour.ipynb to run data cleaning and feature engineering (fills missing ratings, standardizes categories, removes duplicates/outliers).
+1. Data Preparation
 
-Load to SQL — Run notebooks/customerBehaviour.ipynb to push the cleaned table to SQL Server (connection string in .env.example).
+Imported raw Excel dataset
+Cleaned missing values and handled inconsistencies
+Standardised categories and removed duplicates
 
-Analysis — Use notebooks/customerBehaviour.ipynb to query SQL, perform segmentation, frequency & loyalty calculations, and generate charts.
+2. Data Transformation & Storage
 
-Dashboard — Open dashboard/Customer Behavior Dashboard.pbix and connect to the SQL database for live visuals (or use exported CSVs in data/ for offline viewing).
+Loaded cleaned data into SQL Server
+Structured data for efficient querying
 
-Run tests / validation — See notebooks/99_validation.ipynb for data checks and reproducibility steps.
+3. Analysis
 
-Key outputs
+Analysed customer demographics and purchase behaviour
+Calculated purchase frequency and customer loyalty
+Explored relationships between discounts, shipping, and spending
 
-Cleaned dataset (data/cleaned_customers.csv)
+4. Visualisation
 
-SQL script (sql/SQLQuery customer behaviour.sql)
+Built an interactive Power BI dashboard
+Visualised revenue trends, customer segments, and purchasing patterns
 
-Jupyter notebooks for each pipeline stage
+Key Insights
 
-Power BI dashboard highlighting revenue by gender/age, purchase frequency, CLV, shipping & discount behaviours
+Male customers contributed a larger share of overall revenue
 
-Presentation file: presentation/Customer Shopping Behaviour Analysis.pptx
+Young adult customers were the most active and highest spending segment
 
-Key insights (brief)
+A small group of loyal customers generated a significant portion of repeat purchases
 
-Male customers account for the largest revenue share.
+Customers using express shipping and discounts tended to spend more
 
-Young adults are the top revenue-generating age group.
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/ffcc4af9-b9da-48fa-8198-dd5ecdff96e0" />
 
-Loyal customers drive most repeat purchases and CLV.
 
-Express shipping and discount users show higher average spend.
+Business Recommendations
+
+Focus marketing efforts on high-spending customer segments
+
+Introduce loyalty programs to retain repeat customers
+
+Promote high-performing product categories to maximise revenue
+
+Use targeted discounts strategically to increase engagement
+
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/901540be-7c32-4d4a-8197-818aee104338" />
+
 
 Notes & reproducibility
 
@@ -57,3 +92,9 @@ Store DB credentials in .env (not committed).
 Notebooks are linear and reproducible — run 01 → 02 → 03 → 99.
 
 All code is commented and parameterised for easy reuse on larger datasets.
+
+Conclusion
+
+This project demonstrates how raw customer data can be transformed into meaningful insights that support business decisions.
+
+It highlights my ability to work across the full data pipeline and connect technical analysis with real-world outcomes.
